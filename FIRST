@@ -6,7 +6,7 @@ def calc(maint,months,conversion,sub_fee):
 
 
 maint = int(input("Enter Customer Maintenance Fee: "))
-months = int(input("How many months remain on Maintenance? "))
+months = float(input("How many months remain on Maintenance? "))
 conversion = int(input("Enter Conversion Fee: "))
 sub_fee = int(input("Enter Monthly Hosting Fee: "))
 
@@ -16,5 +16,5 @@ monthly = total / sub_fee
 if total < 0:
   print("Customer owes $%d"% total)
 else:
-  print("we owe you $%d in services"% total)
-  print("with $%d, you have %.2f months of free cloud service "% (total, monthly))
+  print("we owe you $%.2f in services"% total)
+  print("with $%.2f, you have %.2f months of free cloud service "% (total, monthly))
